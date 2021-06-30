@@ -12,10 +12,19 @@ class Board {
     }
   }
 
-  void doMove(String key, String char) {
+  Board.of(Map<String, Cell> cells) {
+    _cells.clear();
+    cells.forEach((key, value) {
+      _cells[key] = value.clone();
+    });
+  }
+
+  bool doMove(String key, String char) {
+    char = char.toUpperCase();
     Cell? cell = _cells[key];
-    if (cell == null) return;
+    if (cell == null) return false;
     cell.char = char;
+    return true;
   }
 
   RoundResult result() {
@@ -104,5 +113,20 @@ class Board {
       }
     }
     return false;
+  }
+
+  List<String> allMoves() {
+    return _cells.values
+        .where((cell) => cell.char.isEmpty)
+        .map((e) => '${e.x}-${e.y}')
+        .toList();
+  }
+
+  void reset() {
+    _cells.clear();
+  }
+
+  Board clone() {
+    return Board.of(_cells);
   }
 }
