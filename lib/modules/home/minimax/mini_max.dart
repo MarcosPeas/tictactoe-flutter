@@ -39,19 +39,16 @@ class MiniMax {
 
   void _result() {
     GameResultState result = _botTurn ? GameResultState.X : GameResultState.O;
-    GameResultState otherResult =
-        _botTurn ? GameResultState.O : GameResultState.X;
+    GameResultState otherResult = _botTurn ? GameResultState.O : GameResultState.X;
     int plusMinus = _botTurn ? 1 : -1;
     RoundResult roundResult = _board.result();
     if (roundResult.state == result) {
-      //if (_board.hasWinnerWidth(result)) {
       _points = plusMinus;
       return;
     } else if (roundResult.state == otherResult) {
       _points = -plusMinus;
       return;
     } else if (roundResult.state == GameResultState.TIED) {
-      //} else if (_board.boardIsFull()) {
       _points = 0;
       return;
     }
