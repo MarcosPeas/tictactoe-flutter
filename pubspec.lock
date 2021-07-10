@@ -70,7 +70,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_modular:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_modular
       url: "https://pub.dartlang.org"
@@ -109,8 +109,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  responsive_framework:
+    dependency: "direct main"
+    description:
+      name: responsive_framework
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   rx_notifier:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: rx_notifier
       url: "https://pub.dartlang.org"

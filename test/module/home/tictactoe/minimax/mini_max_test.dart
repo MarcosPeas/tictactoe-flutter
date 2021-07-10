@@ -3,7 +3,7 @@ import 'package:tictactoe/modules/home/minimax/mini_max.dart';
 import 'package:tictactoe/modules/home/tictactoe/board.dart';
 
 void main() {
-  test('MiniMax test 01.', () {
+  test('MiniMax test 01.', () async {
     Board board = Board();
     board.doMove('0-0', 'O');
     board.doMove('1-0', 'O');
@@ -18,7 +18,7 @@ void main() {
     expect('0-2', result, reason: 'Espera-se que AI jogue na posição 0-2');
   });
 
-  test('MiniMax test 02.', () {
+  test('MiniMax test 02.', () async {
     Board board = Board();
     board.doMove('0-0', 'O');
     board.doMove('2-0', 'O');
@@ -32,7 +32,7 @@ void main() {
     expect('1-1', result, reason: 'Espera-se que AI jogue na posição 1-1');
   });
 
-  test('MiniMax test 03.', () {
+  test('MiniMax test 03.', () async {
     Board board = Board();
     board.doMove('0-0', 'O');
     board.doMove('2-0', 'O');
@@ -48,7 +48,7 @@ void main() {
     expect('2-2', result, reason: 'Espera-se que AI jogue na posição 2-2');
   });
 
-  test('MiniMax test 04.', () {
+  test('MiniMax test 04.', () async {
     Board board = Board();
     board.doMove('1-0', 'O');
     board.doMove('1-1', 'O');

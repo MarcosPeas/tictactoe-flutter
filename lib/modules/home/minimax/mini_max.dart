@@ -37,7 +37,7 @@ class MiniMax {
     return _topMove();
   }
 
-  void _result() {
+  _result() {
     GameResultState result = _botTurn ? GameResultState.X : GameResultState.O;
     GameResultState otherResult = _botTurn ? GameResultState.O : GameResultState.X;
     int plusMinus = _botTurn ? 1 : -1;
@@ -97,7 +97,6 @@ class MiniMax {
       if (points == maxValue) {
         pos.add(child._currentPost);
       }
-      print('${child._currentPost}: $points');
     });
     return _selectRandomPos(pos);
   }
