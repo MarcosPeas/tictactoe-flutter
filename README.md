@@ -1,16 +1,23 @@
-# tictactoe
+# TicTacToe Flutter
 
-A new Flutter project.
+Um projeto de IA para o jogo da velha usando a linguagem Dart.
 
-## Getting Started
+## Sobre o projeto
 
-This project is a starting point for a Flutter application.
+Este projeto, é um Jogo da Velha com uma inteligência artificial capaz de obter, no mínimo, um empate.
 
-A few resources to get you started if this is your first Flutter project:
+## Recursos e Bibliotecas
+ - [FlutterModular](https://pub.dev/packages/flutter_modular): para injetar as dependências e facilitar as mudanças de telas.
+ - [RxNotifier](https://pub.dev/packages/rx_notifier): para reatividade.
+ - [ResponsiveFramework](https://pub.dev/packages/responsive_framework): para tratar da responsividade do projeto em diferentes tamanhos de tela.
+ - [Isolate](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html): para usar o algoritmo da IA em uma rotina diferente da Main (até o momento, não funcionou na Web).
+ - [Padrão de Projeto State (Máquina de Estados Finitos)](https://refactoring.guru/pt-br/design-patterns/state/java/example): para gerenciar os estados do jogo.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Setup
+ - Clone este projeto.
+ - Use o comando _flutter pub get_ para baixar as dependências.
+ - Com um device disponível, use o camando _flutter run_ para executar o projeto.
+ - Caso não queira seguir os passos acima, use os recursos da sua IDE.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Problemas
+Até o momento, não foi possível usar uma [_Isolate_](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html) na compilação para a Web. Caso você tenha uma solução, fique à vontade em aplicá-la.
