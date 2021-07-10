@@ -1,6 +1,6 @@
 # TicTacToe Flutter
 
-Um projeto de IA para o jogo da velha usando a linguagem Dart.
+Um projeto de IA para o Jogo da Velha usando a linguagem Dart.
 
 ## Sobre o projeto
 
@@ -20,4 +20,4 @@ Este projeto, é um Jogo da Velha com uma inteligência artificial capaz de obte
  - Caso não queira seguir os passos acima, use os recursos da sua IDE.
 
 ## Problemas
-Até o momento, não foi possível usar uma [_Isolate_](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html) na compilação para a Web. Caso você tenha uma solução, fique à vontade em aplicá-la.
+Até o momento, não foi possível usar uma [_Isolate_](https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html) na compilação para a Web. Neste caso, o algoritmo da IA é executado na rotina principal, bloqueando-a, até que a IA faça a sua jogada. Caso você tenha uma solução, fique à vontade em aplicá-la.
